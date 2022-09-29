@@ -1,0 +1,15 @@
+{{ define "main" }}
+<main>
+	<h1>{{.Title}}</h1>
+	<p class="subtitle">{{.Params.subtitle}}</p>
+	<p class="date">{{.Date.Format "January 2006"}}</p>
+	{{.Content}}
+
+	<style>
+		.date {
+			font-style: italic;
+			color: var(--secondary)
+		}
+	</style>
+</main>
+{{ end }}

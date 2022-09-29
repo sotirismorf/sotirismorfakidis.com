@@ -1,0 +1,31 @@
+<ul class="menu">
+	{{ $currentPage := . }}
+	{{ range .Site.Menus.main }}
+	<li class="menu-item{{ if $currentPage.IsMenuCurrent "main" . }} menu-item-active{{ end }}">
+		<a href="{{ .URL }}">{{ .Name }}</a>
+	</li>
+	{{ end }}
+</ul>
+
+<style>
+	.menu {
+		margin-top: 2rem;
+		margin-bottom: 5rem;
+		padding-left: 0;
+	}
+	.menu {
+		justify-content: center;
+		display: flex;
+		gap: 1.5rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.menu-item {
+		font-size: 2rem;
+	}
+
+	.menu-item-active {
+		color: var(--primary);
+	}
+</style>

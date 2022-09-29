@@ -1,0 +1,24 @@
+baseURL = 'http://localhost:1313/'
+title = 'Sotiris Morfakidis'
+
+defaultContentLanguage = "el"
+languageCode = "el-gr"
+
+[params]
+
+[menu]
+[[menu.main]]
+	pageRef="/"
+	name = 'home'
+	url = '/'
+	weight = 1
+[[menu.main]]
+	pageRef="blog"  
+	name = 'blog'
+	url = '/blog'
+	weight = 2
+[[menu.main]]
+	pageRef="portfolio"
+	name = 'portfolio'
+	url = '/portfolio'
+	weight = 3

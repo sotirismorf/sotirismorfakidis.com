@@ -1,0 +1,40 @@
+<div class="collection">
+	{{ with .Site.GetPage "section" "blog" }}
+	<div class="collection-description">{{ .Title }}</div>
+	{{ end }}
+
+	<ul class="collection-list">
+		{{ range (where .Site.RegularPages "Section" "blog") }}
+		<li>
+			<a href="{{.RelPermalink}}">{{ .Title }}</a>
+		</li>
+		{{ end }}
+	</ul>
+</div>
+
+<div class="collection">
+	{{ with .Site.Data.info }}
+	<div class="collection-description">{{ .description }}</div>
+	<ul class="collection-list">
+		{{ range .items }}
+		<li><a href="{{ .url }}" target="_blank">{{ .description }}</a></li>
+		{{ end }}
+	</ul>
+	{{ end }}
+	<style>
+		.collection {
+			margin-top: 4rem;
+			display: flex;
+			gap: 4rem;
+			;
+		}
+
+		.collection-description {
+			width: 30%;
+		}
+
+		.collection-list li {
+			margin-bottom: 0.4rem;
+		}
+	</style>
+</div>

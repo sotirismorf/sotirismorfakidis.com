@@ -1,0 +1,36 @@
+{{ define "main" }}
+<main>
+    <article>
+        <!-- <header> -->
+        <!--     <h1>{{.Title}}</h1> -->
+        <!-- </header> -->
+        <!-- {{.Content}} -->
+    </article>
+    <ul class="list">
+    {{ range .Pages }}
+        <li class="list-item">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+			<span>({{ .Date.Format "Jan 2006"}})</span>
+        </li>
+    {{ end }}
+    </ul>
+	<style>
+		.list {
+			margin-top: 8rem;
+			margin-bottom: 8rem;
+		}
+
+		.list-item {
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+		}
+
+		.list-item a {
+			text-decoration: none;
+		}
+		.list-item span {
+			color: var(--secondary);
+		}
+	</style>
+</main>
+{{ end }}

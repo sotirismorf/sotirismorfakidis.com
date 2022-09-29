@@ -1,0 +1,13 @@
+{
+  "description": "Find me on the internet",
+  "items": [
+    {
+      "description": "My github repositories",
+      "url": "https://github.com/sotirismorf"
+    },
+    {
+      "description": "My spotify playlists",
+      "url": "https://spotify.com/sotirismorf"
+    }
+  ]
+}
