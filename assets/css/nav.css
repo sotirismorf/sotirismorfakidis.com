@@ -1,0 +1,21 @@
+/* For mobile phones: */
+.menu-item-active {
+  color: var(--primary);
+}
+
+.menu {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  justify-content: center;
+  display: flex;
+  gap: 1.5rem;
+  font-size: 2rem;
+}
+
+/* @media only screen and (min-width: 600px) { */
+/*   For tablets: */
+/* } */
+/**/
+/* @media only screen and (min-width: 30em) { */
+/*   For desktop: */
+/* } */
