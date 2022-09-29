@@ -3,6 +3,9 @@ title = 'Sotiris Morfakidis'
 
 languageCode = "en-us"
 
+[build.environment]
+  HUGO_VERSION = "hugo v0.104.1+extended"
+
 [menu]
 [[menu.main]]
 	pageRef="/"
