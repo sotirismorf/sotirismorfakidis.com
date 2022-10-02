@@ -10,4 +10,4 @@ This guide will include the following features:
 - Awesome fuzzy file searching using the Telescope.nvim plugin
 - Plus more features
 
-## Install Neovim
+...Guide coming soon

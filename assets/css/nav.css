@@ -1,15 +1,17 @@
 /* For mobile phones: */
 .menu-item-active {
-  color: var(--primary);
+  	color: var(--primary);
 }
 
 .menu {
-  margin-top: 2rem;
-  margin-bottom: 5rem;
-  justify-content: center;
-  display: flex;
-  gap: 1.5rem;
-  font-size: 2rem;
+	margin-top: 2rem;
+	margin-bottom: 5rem;
+	justify-content: center;
+	display: flex;
+	gap: 1.5rem;
+ 	font-size: 2rem;
+ 	list-style-type: none;
+	padding-left: unset;
 }
 
 /* @media only screen and (min-width: 600px) { */

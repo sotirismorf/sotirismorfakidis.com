@@ -6,14 +6,14 @@
         <!-- </header> -->
         <!-- {{.Content}} -->
     </article>
-    <ul class="list">
+    <div class="list">
     {{ range .Pages }}
-        <li class="list-item">
+        <p class="list-item">
             <a href="{{ .Permalink }}">{{ .Title }}</a>
 			<span>({{ .Date.Format "Jan 2006"}})</span>
-        </li>
+        </p>
     {{ end }}
-    </ul>
+    </div>
 	<style>
 		.list {
 			margin-top: 8rem;

@@ -1,7 +1,9 @@
 <ul class="menu">
 	{{ $currentPage := . }}
 	{{ range .Site.Menus.main }}
-	<li class="menu-item{{ if $currentPage.IsMenuCurrent "main" . }} menu-item-active{{ end }}">
+	{{ $is_current := $currentPage.IsMenuCurrent "main" . }}
+	{{ $is_child := $currentPage.HasMenuCurrent "main" . }}
+	<li class="menu-item{{ if or $is_current $is_child }} menu-item-active{{ end }}">
 		<a href="{{ .URL }}">{{ .Name }}</a>
 	</li>
 	{{ end }}
