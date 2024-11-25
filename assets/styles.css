@@ -7,7 +7,6 @@
 }
 
 body {
-	font-family: "Roboto", Georgia, serif, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji';
 	font-weight: 500;
 	background: var(--bg);
 	color-scheme: dark;
@@ -21,17 +20,23 @@ main {
 	margin-right: auto;
 }
 
+body>main>header {
+	margin-top: 5rem;
+}
 
-a {
-	color: unset;
+a:link,
+a:visited {
+	color: #b16286;
+	text-decoration: underline;
+}
+
+a:link:active,
+a:visited:active {
+	color: #458588;
 }
 
 ul {
 	margin: unset;
-}
-
-a:hover {
-	color: var(--primary);
 }
 
 footer {
@@ -40,7 +45,8 @@ footer {
 	text-align: center;
 }
 
-pre, .monospace {
+pre,
+.monospace {
 	font-family: "Noto Sans Mono", monospace;
 }
 
@@ -51,4 +57,19 @@ pre, .monospace {
 
 .menu-link-active {
 	color: var(--primary);
+}
+
+.menu-item-active {
+	color: var(--primary);
+}
+
+.menu {
+	margin-top: 2rem;
+	margin-bottom: 5rem;
+	justify-content: center;
+	display: flex;
+	gap: 1.5rem;
+	font-size: 2rem;
+	list-style-type: none;
+	padding-left: unset;
 }

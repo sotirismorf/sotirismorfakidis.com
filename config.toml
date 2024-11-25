@@ -1,21 +1,3 @@
 baseURL = 'https://sotirismorfakidis.com/'
 title = 'Sotiris Morfakidis'
-
 languageCode = "en-us"
-
-[menu]
-[[menu.main]]
-	pageRef="/"
-	name = 'home'
-	url = '/'
-	weight = 1
-[[menu.main]]
-	pageRef="blog"  
-	name = 'blog'
-	url = '/blog'
-	weight = 2
-[[menu.main]]
-	pageRef="portfolio"
-	name = 'portfolio'
-	url = '/portfolio'
-	weight = 3

@@ -1,11 +1,8 @@
 ---
 title: Sotiris Morfakidis
-subtitle: Software Engineer
 ---
 
-I enjoy writing and using minimalist, modular and scalable programs.
-I only use free and open-source software.
-I am currently studying Electrical and Computer Engineering at
-[Aristotle University of Thessaloniki](https://ee.auth.gr/).
-
-Take a look at my [github](https://github.com/sotirismorf) :)
+I enjoy programming. I am studying Electrical and Computer Engineering at the
+[Aristotle University of Thessaloniki](https://ee.auth.gr/). You can find me on
+[github](https://github.com/sotirismorf). Currently experimenting with
+PostgreSQL and digital archiving software.

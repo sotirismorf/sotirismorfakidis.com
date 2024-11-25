@@ -1,25 +1,13 @@
 {{ define "main" }}
 <main aria-role="main">
-	<header class="homepage-header">
-		<h1 class="homepage-title">{{.Title}}</h1>
+	<header>
+		<h1 style="font-size:1rem;"><i>{{.Title}}</i></h1>
 		{{ with .Params.subtitle }}
 		<span class="subtitle">{{.}}</span>
 		{{ end }}
 	</header>
-	<div class="homepage-content">
+	<div>
 		{{.Content}}
 	</div>
-	<style>
-		main {
-			margin-top: 5rem;
-		}
-
-
-		.subtitle {
-			color: var(--secondary)
-		}
-
-	</style>
-	<!-- {{ partial "collections.html" . }} -->
 </main>
 {{ end }}
